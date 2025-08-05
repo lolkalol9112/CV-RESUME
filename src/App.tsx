@@ -1,4 +1,5 @@
 import React from 'react'
+import MagicBento from './components/MagicBento'
 
 function App() {
   return (
@@ -62,6 +63,21 @@ function App() {
               </p>
             </div>
           </div>
+        </section>
+
+        <section className="magic-bento-section">
+          <h3 className="inter-semibold">Интерактивные возможности</h3>
+          <p className="inter-regular">
+            Наведите курсор на карточки ниже, чтобы увидеть магические эффекты и анимации
+          </p>
+          <MagicBento 
+            enableStars={true}
+            enableSpotlight={true}
+            enableBorderGlow={true}
+            enableTilt={true}
+            enableMagnetism={true}
+            clickEffect={true}
+          />
         </section>
 
         <section className="experience-section">
