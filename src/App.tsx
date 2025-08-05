@@ -29,81 +29,46 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1 className="inter-bold">Добро пожаловать на мой лендинг</h1>
+        <h1 className="inter-bold">Portfolio</h1>
       </header>
       
       <main className="main">
         <section className="hero">
-          <h2 className="inter-semibold">Профессиональное резюме</h2>
+          <h2 className="inter-semibold">NDA Notice</h2>
           <p className="inter-regular">
-            Это современный лендинг, созданный на React с использованием Vite и шрифта Inter. 
-            Здесь представлена информация о профессиональных навыках и опыте разработчика.
+          Unfortunately, all of my recent projects are under NDA, so I am not permitted to share code samples.
+However, I am happy to discuss my experience, technical approaches, and problem-solving strategies in detail during an interview.<br></br><br></br>
+Thank you for your understanding.
           </p>
         </section>
         
-        <section className="content">
-          <h3 className="inter-semibold">О проекте</h3>
-          <p className="inter-regular">
-            Данный лендинг создан с минималистичным дизайном - черный фон и белый текст 
-            для максимальной читаемости и современного внешнего вида. Используется 
-            профессиональный шрифт Inter с различными весами.
-          </p>
-          
-          <h3 className="inter-semibold">Технологии</h3>
-          <ul>
-            <li className="inter-regular">React 19</li>
-            <li className="inter-regular">TypeScript</li>
-            <li className="inter-regular">Vite</li>
-            <li className="inter-regular">CSS3</li>
-            <li className="inter-regular">Inter Font</li>
-          </ul>
-        </section>
-
         <section className="skills-section">
           <h3 className="inter-semibold">Навыки и технологии</h3>
           <div className="skills-grid">
             <div className="skill-card">
               <h4 className="inter-medium">Frontend</h4>
-              <p className="inter-regular">
-                React, TypeScript, JavaScript, HTML5, CSS3, Sass, Tailwind CSS
-              </p>
+              <p className="inter-regular">Next.js, React.js, Angular, Vue.js, UI/UX Design Awareness</p>
             </div>
             <div className="skill-card">
               <h4 className="inter-medium">Backend</h4>
-              <p className="inter-regular">
-                Node.js, Express, Python, Django, PostgreSQL, MongoDB
-              </p>
+              <p className="inter-regular">Node.js, FastAPI, Flask</p>
             </div>
             <div className="skill-card">
-              <h4 className="inter-medium">Инструменты</h4>
-              <p className="inter-regular">
-                Git, Docker, Webpack, Vite, Jest, ESLint, Prettier
-              </p>
+              <h4 className="inter-medium">Languages</h4>
+              <p className="inter-regular">JavaScript, Python, Swift, SQL (PostgreSQL, SQLite, Redis)</p>
             </div>
             <div className="skill-card">
-              <h4 className="inter-medium">Design</h4>
-              <p className="inter-regular">
-                Figma, Adobe XD, Sketch, Responsive Design, UI/UX принципы
-              </p>
+              <h4 className="inter-medium">Developer Tools</h4>
+              <p className="inter-regular">Git, Docker, VS Code, Xcode, Slack</p>
+            </div>
+            <div className="skill-card">
+              <h4 className="inter-medium">Soft Skills</h4>
+              <p className="inter-regular">Leadership, Strong Work Ethic, Communication</p>
             </div>
           </div>
         </section>
 
-        <section className="magic-bento-section">
-          <h3 className="inter-semibold">Интерактивные возможности</h3>
-          <p className="inter-regular">
-            Наведите курсор на карточки ниже, чтобы увидеть магические эффекты и анимации
-          </p>
-          <MagicBento 
-            enableStars={true}
-            enableSpotlight={true}
-            enableBorderGlow={true}
-            enableTilt={true}
-            enableMagnetism={true}
-            clickEffect={true}
-          />
-        </section>
-
+        
         <section className="experience-section">
           <h3 className="inter-semibold">Опыт работы</h3>
           
@@ -164,10 +129,6 @@ function App() {
           <FlowingMenu items={menuItems} />
         </div>
       </section>
-      
-      <footer className="footer">
-        <p className="inter-regular">&copy; 2024 CV Resume Landing. Все права защищены.</p>
-      </footer>
     </div>
   )
 }
