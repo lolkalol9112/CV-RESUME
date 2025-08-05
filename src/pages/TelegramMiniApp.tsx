@@ -1,26 +1,30 @@
 import React from 'react';
-import ProjectPage from './ProjectPage';
+import ProjectPage, { Section } from './ProjectPage';
 import './ProjectPage.css';
 
-const images = [
-  'tg1.png',
-  'tg2.png',
-  'tg3.png',
-  'tg4.png',
-  'tg5.png',
-  'tg6.png',
-  'tg7.png',
-  'tg8.png',
+const sections: Section[] = [
+  {
+    image: 'tg1.png',
+    title: 'AI-powered Video Editor',
+    description: 'Edit and generate videos directly in Telegram using advanced AI tools.',
+    stack: 'TypeScript, Node.js, FastAPI, ffmpeg, OpenAI'
+  },
+  {
+    image: 'tg2.png',
+    title: 'Seamless API Integrations',
+    description: 'Over 20 external APIs integrated for content, analytics, and automation.',
+    stack: 'Telegram API, REST, Webhooks'
+  },
+  { image: 'tg3.png' },
+  { image: 'tg4.png' },
+  { image: 'tg5.png' },
+  { image: 'tg6.png' },
+  { image: 'tg7.png' },
+  { image: 'tg8.png' },
 ];
 
 export default function TelegramMiniApp() {
   return (
-    <ProjectPage
-      title="Telegram Mini-App"
-      description="Telegram-based video editor and content platform for creators and businesses. Features AI-powered tools, seamless video editing, and integration with 20+ APIs."
-      stack="TypeScript, Node.js, FastAPI, React, Telegram API, ffmpeg, OpenAI, Docker"
-      images={images}
-      imagesFolder="Telegram"
-    />
+    <ProjectPage sections={sections} imagesFolder="Telegram" />
   );
 }
