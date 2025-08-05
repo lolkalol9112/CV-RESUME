@@ -5,13 +5,13 @@ import FlowingMenu from './components/FlowingMenu'
 function App() {
   const menuItems = [
     {
-      link: "#about",
-      text: "About",
+      link: "/about",
+      text: "Telegram Mini-App",
       image: "./images/about.svg"
     },
     {
       link: "#skills",
-      text: "Skills",
+      text: "CRM Platform",
       image: "./images/skills.svg"
     },
     {
@@ -80,52 +80,53 @@ Thank you for your understanding.
 
         
         <section className="experience-section">
-          <h3 className="inter-semibold">Опыт работы</h3>
-          
+          <h2 className="inter-semibold">Experience</h2>
+          <br />
+
           <div className="experience-item">
-            <h4 className="inter-medium">Senior Frontend Developer</h4>
-            <p className="company inter-regular">Tech Company Inc. • 2022 - настоящее время</p>
-            <p className="inter-regular">
-              Разработка и поддержка крупных веб-приложений на React и TypeScript. 
-              Оптимизация производительности, внедрение новых технологий, 
-              менторство младших разработчиков.
-            </p>
+            <h4 className="inter-medium">Team Lead</h4>
+            <p className="company inter-regular">OrbosAI, Moscow • Dec 2024 - Aug 2025</p>
+            <ul className="inter-regular">
+              <li>Introduced AI-driven workflows to the team, resulting in a 440% increase in productivity.</li>
+              <li>Integrated over 20 external API services, expanding the app’s capabilities and user base.</li>
+              <li>Pioneered the first video editor within Telegram, enabling seamless multimedia content creation for users.</li>
+            </ul>
           </div>
 
           <div className="experience-item">
-            <h4 className="inter-medium">Frontend Developer</h4>
-            <p className="company inter-regular">Digital Agency • 2020 - 2022</p>
-            <p className="inter-regular">
-              Создание адаптивных веб-сайтов и приложений для различных клиентов. 
-              Работа с дизайн-системами, интеграция с API, оптимизация под SEO.
-            </p>
+            <h4 className="inter-medium">Full-Stack Developer</h4>
+            <p className="company inter-regular">Hunt.ME, Remote • Nov 2023 - Dec 2024</p>
+            <ul className="inter-regular">
+              <li>Automated key HR workflows, reducing manual effort and improving placement speed by 30%.</li>
+              <li>Revamped the company’s CRM platform, transforming it from an underutilized tool into an essential part of daily operations by focusing on usability and modern design.</li>
+              <li>Provided training and support for the new CRM, ensuring a smooth transition and rapid adoption across the company.</li>
+            </ul>
           </div>
 
           <div className="experience-item">
-            <h4 className="inter-medium">Junior Developer</h4>
-            <p className="company inter-regular">StartUp Lab • 2019 - 2020</p>
-            <p className="inter-regular">
-              Начало карьеры в веб-разработке. Изучение современных технологий, 
-              участие в создании MVP продуктов, работа в agile команде.
-            </p>
+            <h4 className="inter-medium">Full-Stack Developer</h4>
+            <p className="company inter-regular">Freelance, Remote • 2020 - 2023</p>
+            <ul className="inter-regular">
+              <li>Completed 30+ small- to medium-sized projects on Fiverr and Upwork.</li>
+            </ul>
           </div>
         </section>
 
         <section className="contact-section">
-          <h3 className="inter-semibold">Контакты</h3>
-          <div className="contact-info">
+          <h2 className="inter-semibold">Contacts</h2>
+          <br></br>
+          <div className="contact-info">            
             <p className="inter-regular">
-              Готов к новым вызовам и интересным проектам!
+              Email: <a href="mailto:ea@verkhozin.ru" className="inter-medium">ea@verkhozin.ru</a>
             </p>
             <p className="inter-regular">
-              Email: <a href="mailto:developer@example.com" className="inter-medium">developer@example.com</a>
+              <p className="inter-regular">Phone: +7 (914) 000-9112</p>
             </p>
+            <br></br>
             <p className="inter-regular">
-              LinkedIn: <a href="#" className="inter-medium">linkedin.com/in/developer</a>
+              GitHub: <a href="https://github.com/lolkalol9112" className="inter-medium">github.com/lolkalol9112</a>
             </p>
-            <p className="inter-regular">
-              GitHub: <a href="#" className="inter-medium">github.com/developer</a>
-            </p>
+           
           </div>
         </section>
       </main>
