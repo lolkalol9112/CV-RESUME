@@ -19,6 +19,10 @@ const sections: Section[] = [
     image: 'tg3.png',
     image2: 'tg4.png',
   },
+  {
+    image: 'tg3.png',
+    image2: 'tg4.png',
+  },
   { image: 'tg5.png' },
   { image: 'tg6.png' },
   { image: 'tg7.png' },
