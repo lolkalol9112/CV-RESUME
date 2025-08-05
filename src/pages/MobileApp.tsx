@@ -1,5 +1,4 @@
 import React from 'react';
-import ProjectPage from './ProjectPage';
 import './ProjectPage.css';
 
 const images = [
@@ -11,12 +10,27 @@ const images = [
 
 export default function MobileApp() {
   return (
-    <ProjectPage
-      title="Mobile App"
-      description="Cross-platform mobile application for business automation and communication. Includes push notifications, real-time chat, and analytics dashboard."
-      stack="React Native, Swift, TypeScript, Node.js, Firebase, Expo"
-      images={images}
-      imagesFolder="Mobile"
-    />
+    <div className="project-page project-page-horizontal">
+      <button className="project-back-btn" onClick={() => (window.location.href = '/')}>back</button>
+      <div className="project-header">
+        <h1 className="project-header-title">Mobile App</h1>
+        <p className="project-header-description">
+          Cross-platform mobile application for business automation and communication. Includes push notifications, real-time chat, and analytics dashboard.
+        </p>
+        <p className="project-header-stack">
+          <b>Stack:</b> React Native, Swift, TypeScript, Node.js, Firebase, Expo
+        </p>
+      </div>
+      <div className="project-gallery-scroll">
+        {images.map((name, idx) => (
+          <img
+            key={idx}
+            src={`/images/Mobile/${name}`}
+            alt={`Mobile App screenshot ${idx+1}`}
+            className="mobile-app-image"
+          />
+        ))}
+      </div>
+    </div>
   );
 }
