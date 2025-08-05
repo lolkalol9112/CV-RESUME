@@ -25,6 +25,48 @@ While I respect the confidentiality agreements that govern my professional work,
 
 I'm always open to discussing my experience in more detail during interviews or professional conversations, where I can share insights about my work while maintaining appropriate confidentiality.
 
+## GitHub Pages Deployment
+
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+### Development
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+### Deployment
+
+#### Automatic Deployment (Recommended)
+The project automatically deploys to GitHub Pages when you push to the `main` branch using GitHub Actions.
+
+#### Manual Deployment
+You can also deploy manually using:
+```bash
+npm run deploy
+```
+
+### Configuration
+
+The project is configured with:
+- **Base URL**: `/CV-RESUME/` (configured in `vite.config.js`)
+- **Build Output**: `dist/` directory
+- **GitHub Actions**: `.github/workflows/deploy.yml`
+
+### Accessing the Site
+
+After deployment, your site will be available at:
+`https://[your-username].github.io/CV-RESUME/`
+
 ---
 
 For any questions about my experience or to schedule a discussion, please feel free to reach out.
