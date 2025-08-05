@@ -72,7 +72,7 @@ Thank you for your understanding.
           <div className="skills-grid">
             <div className="skill-card">
               <h4 className="inter-medium">Frontend</h4>
-              <p className="inter-regular">Next.js, React.js, Angular, Vue.js, UI/UX Design Awareness</p>
+              <p className="inter-regular">Next.js, React.js, Angular, Vue.js, SwiftUI</p>
             </div>
             <div className="skill-card">
               <h4 className="inter-medium">Backend</h4>

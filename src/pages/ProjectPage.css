@@ -318,3 +318,28 @@
     max-height: 40vh;
   }
 }
+
+.scroll-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  color: #aaa;
+  opacity: 0.85;
+  animation: scrollhint-fade 2s infinite alternate;
+  user-select: none;
+}
+.scroll-hint-arrow {
+  font-size: 1.7em;
+  animation: scrollhint-arrow-move 1.2s infinite alternate;
+}
+@keyframes scrollhint-fade {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+@keyframes scrollhint-arrow-move {
+  from { transform: translateX(0); }
+  to { transform: translateX(18px); }
+}

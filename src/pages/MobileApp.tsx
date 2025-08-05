@@ -15,10 +15,10 @@ export default function MobileApp() {
       <div className="project-header">
         <h1 className="project-header-title">Mobile App</h1>
         <p className="project-header-description">
-          Cross-platform mobile application for business automation and communication. Includes push notifications, real-time chat, and analytics dashboard.
+          iOS app for freelancers to manage their budgets, track cash flow, and generate tax reports.
         </p>
         <p className="project-header-stack">
-          <b>Stack:</b> React Native, Swift, TypeScript, Node.js, Firebase, Expo
+          <b>Stack:</b> Swift, SwiftUI, SwiftData.
         </p>
       </div>
       <div className="project-gallery-scroll">
