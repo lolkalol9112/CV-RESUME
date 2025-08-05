@@ -42,8 +42,21 @@ Thank you for your understanding.
           </p>
         </section>
         
+        <section className="flowing-menu-section">
+          <h2 className="inter-bold">Project Examples</h2>
+          <p className="inter-regular">
+            Explore some of my featured projects below
+          </p>
+          <div className="flowing-menu-container">
+            <FlowingMenu items={menuItems} />
+          </div>
+        </section>
+
+
+
+
         <section className="skills-section">
-          <h3 className="inter-semibold">Навыки и технологии</h3>
+          <h2 className="inter-bold">Skills</h2>
           <div className="skills-grid">
             <div className="skill-card">
               <h4 className="inter-medium">Frontend</h4>
@@ -61,10 +74,7 @@ Thank you for your understanding.
               <h4 className="inter-medium">Developer Tools</h4>
               <p className="inter-regular">Git, Docker, VS Code, Xcode, Slack</p>
             </div>
-            <div className="skill-card">
-              <h4 className="inter-medium">Soft Skills</h4>
-              <p className="inter-regular">Leadership, Strong Work Ethic, Communication</p>
-            </div>
+            
           </div>
         </section>
 
@@ -120,15 +130,6 @@ Thank you for your understanding.
         </section>
       </main>
 
-      <section className="flowing-menu-section">
-        <h3 className="inter-semibold">Навигационное меню</h3>
-        <p className="inter-regular">
-          Интерактивное меню с плавными анимациями
-        </p>
-        <div className="flowing-menu-container">
-          <FlowingMenu items={menuItems} />
-        </div>
-      </section>
     </div>
   )
 }
