@@ -5,22 +5,23 @@ type ProjectPageProps = {
   title: string;
   description: string;
   stack: string;
-  images: string[];
+  images: string[]; // только имена файлов
+  imagesFolder: string;
 };
 
-const ProjectPage: React.FC<ProjectPageProps> = ({ title, description, stack, images }) => {
-  const isVertical = images.length === 2;
+const ProjectPage: React.FC<ProjectPageProps> = ({ title, description, stack, images, imagesFolder }) => {
   return (
     <div className="project-page">
-      <div className={`project-layout${isVertical ? ' vertical' : ''}`}>
-        <div className="project-images">
-          {isVertical ? (
-            images.map((src, idx) => (
-              <img key={idx} src={src} alt={title + ' screenshot ' + (idx+1)} className="project-image" />
-            ))
-          ) : (
-            <img src={images[0]} alt={title + ' screenshot'} className="project-image" />
-          )}
+      <div className="project-layout">
+        <div className="project-gallery-scroll">
+          {images.map((name, idx) => (
+            <img
+              key={idx}
+              src={`/images/${imagesFolder}/${name}`}
+              alt={title + ' screenshot ' + (idx+1)}
+              className="project-image-scroll"
+            />
+          ))}
         </div>
         <div className="project-info">
           <h1 className="project-title">{title}</h1>

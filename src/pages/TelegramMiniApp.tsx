@@ -3,9 +3,14 @@ import ProjectPage from './ProjectPage';
 import './ProjectPage.css';
 
 const images = [
-  '/images/telegram1.jpg',
-  '/images/telegram2.jpg',
-  '/images/telegram3.jpg',
+  'tg1.png',
+  'tg2.png',
+  'tg3.png',
+  'tg4.png',
+  'tg5.png',
+  'tg6.png',
+  'tg7.png',
+  'tg8.png',
 ];
 
 export default function TelegramMiniApp() {
@@ -15,6 +20,7 @@ export default function TelegramMiniApp() {
       description="Telegram-based video editor and content platform for creators and businesses. Features AI-powered tools, seamless video editing, and integration with 20+ APIs."
       stack="TypeScript, Node.js, FastAPI, React, Telegram API, ffmpeg, OpenAI, Docker"
       images={images}
+      imagesFolder="Telegram"
     />
   );
 }
