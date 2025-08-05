@@ -1,7 +1,31 @@
 import React from 'react'
 import MagicBento from './components/MagicBento'
+import FlowingMenu from './components/FlowingMenu'
 
 function App() {
+  const menuItems = [
+    {
+      link: "#about",
+      text: "About",
+      image: "./images/about.svg"
+    },
+    {
+      link: "#skills",
+      text: "Skills",
+      image: "./images/skills.svg"
+    },
+    {
+      link: "#projects",
+      text: "Projects",
+      image: "./images/projects.svg"
+    },
+    {
+      link: "#contact",
+      text: "Contact",
+      image: "./images/contact.svg"
+    }
+  ];
+
   return (
     <div className="app">
       <header className="header">
@@ -130,6 +154,16 @@ function App() {
           </div>
         </section>
       </main>
+
+      <section className="flowing-menu-section">
+        <h3 className="inter-semibold">Навигационное меню</h3>
+        <p className="inter-regular">
+          Интерактивное меню с плавными анимациями
+        </p>
+        <div className="flowing-menu-container">
+          <FlowingMenu items={menuItems} />
+        </div>
+      </section>
       
       <footer className="footer">
         <p className="inter-regular">&copy; 2024 CV Resume Landing. Все права защищены.</p>
