@@ -299,21 +299,22 @@
 }
 
 .mobile-app-image {
+  object-fit: contain;
   max-width: 500px;
-  min-width: 180px;
-  max-height: 350px;
-  min-height: 120px;
+  max-height: 60vh;
+  min-width: 0;
+  min-height: 0;
   width: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
   border-radius: 0;
   box-shadow: none;
   background: none;
-  display: block;
   margin: 0;
 }
 @media (max-width: 900px) {
   .mobile-app-image {
     max-width: 90vw;
-    max-height: 180px;
+    max-height: 40vh;
   }
 }
