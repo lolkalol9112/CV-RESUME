@@ -133,6 +133,34 @@
   min-width: 220px;
 }
 
+.project-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.project-header-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+.project-header-description {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+}
+.project-header-stack {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-bottom: 0;
+}
+@media (max-width: 900px) {
+  .project-header-title {
+    font-size: 2rem;
+  }
+  .project-header-description {
+    font-size: 1.05rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .project-image-scroll {
     min-width: 400px;

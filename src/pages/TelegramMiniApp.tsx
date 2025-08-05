@@ -19,10 +19,6 @@ const sections: Section[] = [
     image: 'tg3.png',
     image2: 'tg4.png',
   },
-  {
-    image: 'tg3.png',
-    image2: 'tg4.png',
-  },
   { image: 'tg5.png' },
   { image: 'tg6.png' },
   { image: 'tg7.png' },
@@ -31,6 +27,12 @@ const sections: Section[] = [
 
 export default function TelegramMiniApp() {
   return (
-    <ProjectPage sections={sections} imagesFolder="Telegram" />
+    <ProjectPage
+      sections={sections}
+      imagesFolder="Telegram"
+      title="Telegram Mini-App"
+      description="Telegram-based video editor and content platform for creators and businesses. Features AI-powered tools, seamless video editing, and integration with 20+ APIs."
+      stack="TypeScript, Node.js, FastAPI, React, Telegram API, ffmpeg, OpenAI, Docker"
+    />
   );
 }
