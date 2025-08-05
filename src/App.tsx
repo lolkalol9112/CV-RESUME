@@ -1,27 +1,37 @@
 import React from 'react'
 import MagicBento from './components/MagicBento'
 import FlowingMenu from './components/FlowingMenu'
+import TelegramMiniApp from './pages/TelegramMiniApp';
+import CRMPlatform from './pages/CRMPlatform';
+import MobileApp from './pages/MobileApp';
+import CryptoExchange from './pages/CryptoExchange';
 
 function App() {
+  const path = window.location.pathname.toLowerCase();
+  if (path === '/telegram-mini-app') return <TelegramMiniApp />;
+  if (path === '/crm-platform') return <CRMPlatform />;
+  if (path === '/mobile-app') return <MobileApp />;
+  if (path === '/crypto-exchange') return <CryptoExchange />;
+
   const menuItems = [
     {
-      link: "/abouttt",
+      link: "/telegram-mini-app",
       text: "Telegram Mini-App",
       image: "./images/about.svg"
     },
     {
-      link: "#skills",
+      link: "/crm-platform",
       text: "CRM Platform",
       image: "./images/skills.svg"
     },
     {
-      link: "#projects",
-      text: "Projects",
+      link: "/mobile-app",
+      text: "Mobile App",
       image: "./images/projects.svg"
     },
     {
-      link: "#contact",
-      text: "Contact",
+      link: "/crypto-exchange",
+      text: "Crypto Exchange",
       image: "./images/contact.svg"
     }
   ];
