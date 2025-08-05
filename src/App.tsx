@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1 className="inter-bold">Portfolio</h1>
+        <h1 className="inter-bold">Egor Verkhozin</h1>
       </header>
       
       <main className="main">
@@ -55,7 +55,7 @@ Thank you for your understanding.
         </section>
         
         <section className="flowing-menu-section">
-          <h2 className="inter-bold">Project Examples</h2>
+          <h1 className="inter-bold">Portfolio</h1>
           <p className="inter-regular">
             Explore some of my featured projects below
           </p>
