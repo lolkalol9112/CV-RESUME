@@ -30,6 +30,7 @@ const ProjectPage: React.FC<ProjectPageProps> = (props) => {
     const { sections, imagesFolder, title, description, stack } = props;
     return (
       <div className="project-page-vertical">
+        <button className="project-back-btn" onClick={() => (window.location.href = '/')}>← Back to main</button>
         <div className="project-header">
           <h1 className="project-header-title">{title}</h1>
           <p className="project-header-description">{description}</p>

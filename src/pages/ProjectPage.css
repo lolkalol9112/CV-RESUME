@@ -78,6 +78,7 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  position: relative;
 }
 
 .project-section-row {
@@ -135,7 +136,8 @@
 
 .project-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-top: 3.5rem;
+  margin-bottom: 5rem;
 }
 .project-header-title {
   font-size: 3rem;
@@ -152,12 +154,40 @@
   color: #aaa;
   margin-bottom: 0;
 }
+
+.project-back-btn {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 10;
+  background: #181818;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.7em 1.3em;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  opacity: 0.92;
+}
+.project-back-btn:hover {
+  background: #333;
+  opacity: 1;
+}
+
 @media (max-width: 900px) {
   .project-header-title {
     font-size: 2rem;
   }
   .project-header-description {
     font-size: 1.05rem;
+  }
+  .project-back-btn {
+    top: 1rem;
+    left: 1rem;
+    font-size: 1rem;
+    padding: 0.5em 1em;
   }
 }
 
