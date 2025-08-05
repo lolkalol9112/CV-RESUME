@@ -13,7 +13,7 @@ export default function CRMPlatform() {
     <ProjectPage
       title="CRM Platform"
       description="Modern CRM for HR and recruiting. Automated workflows, analytics, and integrations for fast placements and team collaboration."
-      stack="React, Node.js, FastAPI, PostgreSQL, Docker, TypeScript"
+      stack="Next.js, Node.js, FastAPI, PostgreSQL"
       images={images}
       imagesFolder="CRM"
     />

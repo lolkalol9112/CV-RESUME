@@ -3,9 +3,10 @@ import ProjectPage from './ProjectPage';
 import './ProjectPage.css';
 
 const images = [
-  'mobile1.png',
-  'mobile2.png',
-  'mobile3.png',
+  'mobile1.PNG',
+  'mobile2.jpg',
+  'mobile3.PNG',
+  'mobile4.PNG',
 ];
 
 export default function MobileApp() {

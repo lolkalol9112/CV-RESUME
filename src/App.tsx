@@ -5,6 +5,7 @@ import TelegramMiniApp from './pages/TelegramMiniApp';
 import CRMPlatform from './pages/CRMPlatform';
 import MobileApp from './pages/MobileApp';
 import CryptoExchange from './pages/CryptoExchange';
+import YTAutoUploader from './pages/CryptoExchange';
 
 function App() {
   const path = window.location.pathname.toLowerCase();
@@ -12,6 +13,7 @@ function App() {
   if (path === '/crm-platform') return <CRMPlatform />;
   if (path === '/mobile-app') return <MobileApp />;
   if (path === '/crypto-exchange') return <CryptoExchange />;
+  if (path === '/yt-auto-uploader') return <YTAutoUploader />;
 
   const menuItems = [
     {
@@ -30,8 +32,8 @@ function App() {
       image: "./images/projects.svg"
     },
     {
-      link: "/crypto-exchange",
-      text: "Crypto Exchange",
+      link: "/yt-auto-uploader",
+      text: "YT Auto Uploader",
       image: "./images/contact.svg"
     }
   ];

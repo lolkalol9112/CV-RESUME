@@ -9,7 +9,7 @@ const images = [
   'uploader4.png',
 ];
 
-export default function CryptoExchange() {
+export default function YTAutoUploader() {
   return (
     <ProjectPage
       title="Auto-Uploader"
