@@ -160,19 +160,25 @@
   top: 2rem;
   left: 2rem;
   z-index: 10;
-  background: #181818;
+  background: none;
   color: #fff;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 0.7em 1.3em;
   font-size: 1.1rem;
   font-weight: 600;
   border: none;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: color 0.2s, background 0.2s;
   opacity: 0.92;
+  text-decoration: none;
+  box-shadow: none;
+  outline: none;
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
 }
 .project-back-btn:hover {
-  background: #333;
+  background: #222;
+  color: #fff;
   opacity: 1;
 }
 
