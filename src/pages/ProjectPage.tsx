@@ -27,29 +27,32 @@ const ProjectPage: React.FC<ProjectPageProps> = (props) => {
     const { sections, imagesFolder } = props;
     return (
       <div className="project-page-vertical">
-        {sections.map((section, idx) => (
-          <div className="project-section-row" key={idx}>
-            <div className={`project-section-image-wrap${section.image2 ? ' double' : ''}`}>
-              <img
-                src={`/images/${imagesFolder}/${section.image}`}
-                alt={section.title || 'Project screenshot ' + (idx + 1)}
-                className={section.image2 ? 'project-section-image half' : 'project-section-image'}
-              />
-              {section.image2 && (
+        {sections.map((section, idx) => {
+          const isReversed = idx % 2 === 1;
+          return (
+            <div className={`project-section-row${isReversed ? ' reversed' : ''}`} key={idx}>
+              <div className={`project-section-image-wrap${section.image2 ? ' double' : ''}`}>
                 <img
-                  src={`/images/${imagesFolder}/${section.image2}`}
-                  alt={section.title || 'Project screenshot ' + (idx + 1) + 'b'}
-                  className="project-section-image half"
+                  src={`/images/${imagesFolder}/${section.image}`}
+                  alt={section.title || 'Project screenshot ' + (idx + 1)}
+                  className={section.image2 ? 'project-section-image half' : 'project-section-image'}
                 />
-              )}
+                {section.image2 && (
+                  <img
+                    src={`/images/${imagesFolder}/${section.image2}`}
+                    alt={section.title || 'Project screenshot ' + (idx + 1) + 'b'}
+                    className="project-section-image half"
+                  />
+                )}
+              </div>
+              <div className="project-section-info">
+                {section.title && <h1 className="project-title">{section.title}</h1>}
+                {section.description && <p className="project-description">{section.description}</p>}
+                {section.stack && <p className="project-stack"><b>Stack:</b> {section.stack}</p>}
+              </div>
             </div>
-            <div className="project-section-info">
-              {section.title && <h1 className="project-title">{section.title}</h1>}
-              {section.description && <p className="project-description">{section.description}</p>}
-              {section.stack && <p className="project-stack"><b>Stack:</b> {section.stack}</p>}
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     );
   }
