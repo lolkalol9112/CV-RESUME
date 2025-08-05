@@ -3,6 +3,7 @@ import './ProjectPage.css';
 
 export type Section = {
   image: string;
+  image2?: string;
   title?: string;
   description?: string;
   stack?: string;
@@ -28,12 +29,19 @@ const ProjectPage: React.FC<ProjectPageProps> = (props) => {
       <div className="project-page-vertical">
         {sections.map((section, idx) => (
           <div className="project-section-row" key={idx}>
-            <div className="project-section-image-wrap">
+            <div className={`project-section-image-wrap${section.image2 ? ' double' : ''}`}>
               <img
                 src={`/images/${imagesFolder}/${section.image}`}
                 alt={section.title || 'Project screenshot ' + (idx + 1)}
-                className="project-section-image"
+                className={section.image2 ? 'project-section-image half' : 'project-section-image'}
               />
+              {section.image2 && (
+                <img
+                  src={`/images/${imagesFolder}/${section.image2}`}
+                  alt={section.title || 'Project screenshot ' + (idx + 1) + 'b'}
+                  className="project-section-image half"
+                />
+              )}
             </div>
             <div className="project-section-info">
               {section.title && <h1 className="project-title">{section.title}</h1>}

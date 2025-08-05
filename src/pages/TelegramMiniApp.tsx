@@ -15,8 +15,10 @@ const sections: Section[] = [
     description: 'Over 20 external APIs integrated for content, analytics, and automation.',
     stack: 'Telegram API, REST, Webhooks'
   },
-  { image: 'tg3.png' },
-  { image: 'tg4.png' },
+  {
+    image: 'tg3.png',
+    image2: 'tg4.png',
+  },
   { image: 'tg5.png' },
   { image: 'tg6.png' },
   { image: 'tg7.png' },
