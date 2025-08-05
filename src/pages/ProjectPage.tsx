@@ -65,26 +65,25 @@ const ProjectPage: React.FC<ProjectPageProps> = (props) => {
       </div>
     );
   }
-  // fallback: старый режим
+  // режим горизонтальной галереи с текстом сверху
   const { title, description, stack, images, imagesFolder } = props;
   return (
-    <div className="project-page">
-      <div className="project-layout">
-        <div className="project-gallery-scroll">
-          {images.map((name, idx) => (
-            <img
-              key={idx}
-              src={`/images/${imagesFolder}/${name}`}
-              alt={title + ' screenshot ' + (idx+1)}
-              className="project-image-scroll"
-            />
-          ))}
-        </div>
-        <div className="project-info">
-          <h1 className="project-title">{title}</h1>
-          <p className="project-description">{description}</p>
-          <p className="project-stack"><b>Stack:</b> {stack}</p>
-        </div>
+    <div className="project-page project-page-horizontal">
+      <button className="project-back-btn" onClick={() => (window.location.href = '/')}>back</button>
+      <div className="project-header">
+        <h1 className="project-header-title">{title}</h1>
+        <p className="project-header-description">{description}</p>
+        <p className="project-header-stack"><b>Stack:</b> {stack}</p>
+      </div>
+      <div className="project-gallery-scroll">
+        {images.map((name, idx) => (
+          <img
+            key={idx}
+            src={`/images/${imagesFolder}/${name}`}
+            alt={title + ' screenshot ' + (idx+1)}
+            className="project-image-scroll project-image-scroll-large"
+          />
+        ))}
       </div>
     </div>
   );

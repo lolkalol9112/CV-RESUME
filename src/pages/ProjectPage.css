@@ -259,3 +259,41 @@
     font-size: 2rem;
   }
 }
+
+.project-page-horizontal {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  padding: 2rem 1rem 3rem 1rem;
+}
+
+.project-image-scroll-large {
+  min-width: 900px;
+  max-width: 1200px;
+  min-height: 500px;
+  max-height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .project-image-scroll-large {
+    min-width: 400px;
+    min-height: 250px;
+  }
+}
+@media (max-width: 900px) {
+  .project-image-scroll-large {
+    min-width: 220px;
+    min-height: 120px;
+    max-width: 100vw;
+    max-height: 40vh;
+  }
+}

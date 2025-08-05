@@ -4,25 +4,33 @@ import './ProjectPage.css';
 
 const sections: Section[] = [
   {
+    image: 'tg3.png',
+    title: 'Seamless API Integrations',
+    description: 'Over 20 external APIs integrated for content, analytics, and automation.',
+  },
+  {
     image: 'tg1.png',
+  },
+  {
+    image: 'tg4.png',
     title: 'AI-powered Video Editor',
     description: 'Edit and generate videos directly in Telegram using advanced AI tools.',
-    stack: 'TypeScript, Node.js, FastAPI, ffmpeg, OpenAI'
   },
   {
     image: 'tg2.png',
-    title: 'Seamless API Integrations',
-    description: 'Over 20 external APIs integrated for content, analytics, and automation.',
-    stack: 'Telegram API, REST, Webhooks'
+    title: 'Adaptive design',
   },
   {
-    image: 'tg3.png',
-    image2: 'tg4.png',
+    image: 'tg8.png',
+    image2: 'tg6.png',
+    title: 'For both desktop and mobile',
   },
-  { image: 'tg5.png' },
-  { image: 'tg6.png' },
-  { image: 'tg7.png' },
-  { image: 'tg8.png' },
+  {
+    image: 'tg7.png',
+    image2: 'tg5.png',
+    title: 'First ever video editor in Telegram!',
+    description: 'Working both on mobile and desktop.',
+  },
 ];
 
 export default function TelegramMiniApp() {
@@ -31,8 +39,8 @@ export default function TelegramMiniApp() {
       sections={sections}
       imagesFolder="Telegram"
       title="Telegram Mini-App"
-      description="Telegram-based video editor and content platform for creators and businesses. Features AI-powered tools, seamless video editing, and integration with 20+ APIs."
-      stack="TypeScript, Node.js, FastAPI, React, Telegram API, ffmpeg, OpenAI, Docker"
+      description="Telegram-based video editor and content platform for creators and businesses. Features AI-powered tools and seamless video editing."
+      stack="Next.js, Python, FastAPI, ffmpeg, Telegram API."
     />
   );
 }
