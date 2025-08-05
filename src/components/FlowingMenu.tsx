@@ -69,13 +69,10 @@ function MenuItem({ link, text, image }: MenuItemProps) {
       .to(marqueeInnerRef.current, { y: edge === 'top' ? '101%' : '-101%' }, 0);
   };
 
+  // Оставляем только текст, без svg/картинок
   const repeatedMarqueeContent = Array.from({ length: 4 }).map((_, idx) => (
     <React.Fragment key={idx}>
       <span>{text}</span>
-      <div
-        className="marquee__img"
-        style={{ backgroundImage: `url(${image})` }}
-      />
     </React.Fragment>
   ));
 

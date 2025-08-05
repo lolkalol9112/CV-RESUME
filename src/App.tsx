@@ -5,7 +5,7 @@ import FlowingMenu from './components/FlowingMenu'
 function App() {
   const menuItems = [
     {
-      link: "/about",
+      link: "/abouttt",
       text: "Telegram Mini-App",
       image: "./images/about.svg"
     },
@@ -115,18 +115,23 @@ Thank you for your understanding.
         <section className="contact-section">
           <h2 className="inter-semibold">Contacts</h2>
           <br></br>
-          <div className="contact-info">            
+          <div className="contact-info">  
+               
             <p className="inter-regular">
               Email: <a href="mailto:ea@verkhozin.ru" className="inter-medium">ea@verkhozin.ru</a>
             </p>
             <p className="inter-regular">
               <p className="inter-regular">Phone: +7 (914) 000-9112</p>
             </p>
-            <br></br>
             <p className="inter-regular">
               GitHub: <a href="https://github.com/lolkalol9112" className="inter-medium">github.com/lolkalol9112</a>
             </p>
            
+            <br></br>
+            <p className="inter-regular">
+              <p className="inter-regular">Egor Verkhozin • Saint-Petersburg, Russia</p>
+            </p>     
+            
           </div>
         </section>
       </main>
